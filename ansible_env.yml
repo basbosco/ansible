@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+   - name: remote server ansible variables
+     debug:
+       msg: "{{ ansible_env.HOME }}"
+   - name: print all the environment variables 
+     debug:
+       msg: "{{ ansible_env }}"
+  
+
